@@ -1,0 +1,33 @@
+.header-card {
+  width: 100vw;
+  height: 20vh;
+  background-color: #2c364c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.website-logo {
+  height: 50px;
+  width: 50px;
+}
+.heading-list-container {
+  color: #ffffff;
+  display: flex;
+  list-style-type: none;
+}
+.heading-list-card {
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.logout-button {
+  color: #ffffff;
+  background-color: #4f46e5;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+}
