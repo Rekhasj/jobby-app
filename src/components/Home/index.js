@@ -1,8 +1,14 @@
+import {Redirect, Link} from 'react-router-dom'
+import Cookies from 'js-cookie'
 import Header from '../Header'
 import './index.css'
 
 const Home = () => {
-  const name = 'rekha'
+  const jwtToken = Cookies.get('jwt_token')
+  console.log(jwtToken)
+  if (jwtToken === undefined) {
+    return <Redirect to="/login" />
+  }
 
   return (
     <div className="home-container">
@@ -13,9 +19,11 @@ const Home = () => {
           Millions of people are searching for jobs, salary information ,
           company reviews. Find job that fits your abilities and potential.
         </p>
-        <button type="button" className="find-button">
-          Find Jobs
-        </button>
+        <Link to="/jobs" className="jobs-link">
+          <button type="button" className="find-button">
+            Find Jobs
+          </button>
+        </Link>
       </div>
     </div>
   )
