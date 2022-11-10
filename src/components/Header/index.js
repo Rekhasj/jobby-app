@@ -10,13 +10,15 @@ const Header = props => {
   }
 
   return (
-    <div className="header-card">
-      <img
-        alt="website logo"
-        className="website-logo"
-        src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-      />
-      <ul className="heading-list-container">
+    <ul className="header-card">
+      <Link to="/" className="heading-list-card">
+        <img
+          alt="website logo"
+          className="website-logo"
+          src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+        />
+      </Link>
+      <div className="heading-list-container">
         <li>
           <Link to="/" className="heading-list-card">
             Home
@@ -27,11 +29,11 @@ const Header = props => {
             Jobs
           </Link>
         </li>
-      </ul>
+      </div>
       <button type="button" className="logout-button" onClick={onClickLogout}>
         Logout
       </button>
-    </div>
+    </ul>
   )
 }
 
