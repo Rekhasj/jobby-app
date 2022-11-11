@@ -1,0 +1,60 @@
+.job-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+  background-image: cover;
+  height: 100%;
+}
+
+@media (screen) and (min-width: 768px) {
+  .job-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  }
+}
+.job-card {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.profile-container {
+  color: #ffffff;
+  width: 20%;
+}
+
+.employment-card {
+  list-style-type: none;
+}
+
+.employment-list {
+  padding-bottom: 5px;
+}
+
+.type-name {
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+.profile-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-image: cover;
+  height: 170px;
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.profile-image {
+  height: 50px;
+  width: 50px;
+}
+.profile-name {
+  color: #6366f1;
+  font-size: 18px;
+}
+.bio-details {
+  color: #2c364c;
+  font-size: 12px;
+}
+.retry-button {
+  background-color: #6366f1;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+.failure-card {
+  text-align: center;
+}

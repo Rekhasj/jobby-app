@@ -2,7 +2,7 @@ import Header from '../Header'
 import './index.css'
 
 const NotFound = () => (
-  <>
+  <div className="home-container">
     <Header />
     <div className="not-found-container">
       <img
@@ -15,7 +15,7 @@ const NotFound = () => (
         were sorry, the page you requested could not be found.
       </p>
     </div>
-  </>
+  </div>
 )
 
 export default NotFound
